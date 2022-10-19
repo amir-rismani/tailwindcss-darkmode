@@ -8,7 +8,7 @@
     <title>Tailwindcss Dark Mode</title>
   </head>
   <body class="flex justify-center items-center h-screen w-60 m-auto dark:bg-slate-900" >
-    <div x-data="{mode: 'system', isOpen: false}" class="w-full flex flex-col justify-center items-center">
+    <div x-data="{mode: '', isOpen: false}" class="w-full flex flex-col justify-center items-center">
       <button @click="isOpen = !isOpen" class="mb-5 relative">
         <span class="light-icon text-gray-400" :class="mode === 'dark' ? 'hidden' : ''">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
